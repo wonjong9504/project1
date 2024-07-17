@@ -3,7 +3,8 @@ kind: Service
 metadata:
   name: svc-main
 spec:
-  type: LoadBalancer
+  type: NodePort
+  clusterIP: 10.100.120.1
   ports:
   - port: 80
     targetPort: 8080
